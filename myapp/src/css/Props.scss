@@ -1,0 +1,99 @@
+/**
+* YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+* https://cssreset.com/
+* Copyright 2012 Yahoo! Inc. All rights reserved.
+* http://yuilibrary.com/license/
+*/
+/*
+TODO will need to remove settings on HTML since we can't namespace it.
+TODO with the prefix, should I group by selector or property for weight savings?
+*/
+html, body, div, dl, dt, dd, ul, ol, li, 
+   h1, h2, h3, h4, h5, h6, 
+   pre, code, 
+   form, fieldset, legend, input, textarea, 
+   p, blockquote, 
+   
+   th, td {margin:0;padding:0;}
+   table {border-collapse:collapse;border-spacing:0;}
+   fieldset, img {border:0;}
+   address, caption, cite, code, dfn, em, strong, th, var {font-style:normal;font-weight:normal;}
+   ol, ul {list-style:none;}
+   caption, th {text-align:left;}
+   h1, h2, h3, h4, h5, h6 {font-size:100%;font-weight:normal;}
+
+   div,img,button,input,textarea,select{outline: none;}
+   strong{font-weight: bold;}
+   em{font-style: italic;}
+   a img{border: none;}
+   *, *:before, *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+   }
+
+.wordwrap{
+    word-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 99%;
+}
+
+button{
+    outline: none;
+    cursor: pointer;
+}
+
+input{outline: none;}
+
+.abs{
+    position: absolute;
+    &.fill{
+        top: 0px;
+        left: 0px;
+        bottom:  0px;
+        right: 0px;
+    }
+}
+
+.abc{
+    top:  50%;
+    left:  50%;
+    transform: translate(-50% , -50%);
+}
+
+.fixed{
+    position: fixed;
+    &.fill{
+        top: 0px;
+        left: 0px;
+        bottom:  0px;
+        right: 0px;
+    }
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    &.aic{
+        align-items: center;
+    }
+}
+
+.s11{font-size: 11px;}
+.s12{font-size: 12px;}
+.s13{font-size: 13px;}
+.s14{font-size: 14px;}
+.s15{font-size: 15px;}
+.s16{font-size: 16px;}
+.s24{font-size: 24px;}
+.s30{font-size: 30px;}
+
+.rel {position: relative;}
+
+.c333{color: #333;}
+.cfff{color:  #fff;}
+.c777{font-size: #777;}
+.b{font-weight: 600;}
+.col{flex-direction: column !important;}
